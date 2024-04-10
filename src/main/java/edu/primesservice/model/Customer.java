@@ -1,13 +1,18 @@
 package edu.primesservice.model;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "customer")
 public class Customer {
 
     private String username;
     private String password;
 
-//    public Customer() {
-//
-//    }
+    public Customer() {
+
+    }
 
     public Customer(String username, String password) {
         this.username = username;
